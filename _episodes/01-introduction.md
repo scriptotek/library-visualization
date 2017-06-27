@@ -1,9 +1,10 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 30
 exercises: 0
 questions:
-- "Key question"
+- "What is visualization?"
+- "What are common fallacies in terms of visualization?"
 objectives:
 - "First objective."
 keypoints:
