@@ -81,7 +81,7 @@ taking actions based on evidence in the data
 
 While there are many other potential goals for visualization, we mainly focus on exploratory data analysis and dissemination in this lesson.
 
-## Qualities of visualizations
+# Qualities of visualizations
 Cairo (2016) suggests a number of qualities of visualizations (which are often not met in practice!):
 
 * *Functional*
@@ -105,7 +105,7 @@ For instance, in this lesson we will be working with a dataset containing *popul
 
 > ## The popular searches dataset
 >
-> This dataset, originating from Primo Analytics, contains up to 500 different query variations per month, as performed in the University of Oslo library discovery system Oria. In the case of this university, this amounts to 5% of all searches done in the system.
+> This dataset, originating from Primo Analytics, contains up to 500 different query variations per month, as performed in a Norwegian university's library discovery system. In the case of this university, this amounts to 5% of all searches done in the system.
 > 
 {: .callout}
 
