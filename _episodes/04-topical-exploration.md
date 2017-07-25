@@ -20,6 +20,8 @@ So far, we have mainly looked at *authors*, *publishers*, and how *new book orde
 
 The `Dewey Classification` column of the *new physical items* dataset shows the full Dewey Decimal Classification number assigned to an item, while the `Dewey Classification Top Line` column contains the integer part of the decimal numbers (the part before the dot). Note that for some books, no DDC number has been assigned.
 
+![DDC columns in our dataset]({{ page.root }}/fig/04-dewey-columns.png)
+
 > ## Data limitations
 >
 > Some books have multiple DDC numbers assigned, but in this dataset, <!--originating from Alma Analytics--> only one DDC number is assigned to each item.
@@ -132,7 +134,7 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > 
 > The data should now look like the image below:
 > 
-> [insert image]
+> ![RAW load your data screen]({{ page.root }}/fig/04-load-your-data.png)
 >
 > Now, scroll down. You see a plethora of charts which can be made using RAW (some more useful than others, admittedly).
 > 
@@ -140,13 +142,13 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > 
 > 10. Scroll down to `Map Your Dimensions`. Here, you can drag and drop elements from your data to different elements of the graph. First, drag `DDC100` to `hierarchy`, followed by `DDC10`. Finally, drag `NumItems` to `Size`.
 > 
-> [insert image]
+> ![RAW map your dimensions screen]({{ page.root }}/fig/04-map-your-dimensions.png)
 > 
 > Voila, our first graph depicting DDC numbers in of our newest library items. The size depicts the number of books in each category.
 > 
-> [insert image]
+> ![RAW map your dimensions screen]({{ page.root }}/fig/04-treemap-01.png)
 > 
-> This graph is still rudimentary, so we can spice it up a little bit.
+> This chart is still rudimentary, and only using red colors. So, we can spice it up a little bit.
 > 
 > 9. Drag `DDC10` to `color` to make it a bit more ‘cheerful’ and easier to read. Notice the change in the chart.
 > 
@@ -182,9 +184,9 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > 
 > 13. Scroll down to `Map your dimensions`. Drag `Library` and `DDC100` to `Hierarchy`, `Count` to `size`, `Library` to `color` and `DDC100` to `label`.
 > 
+> ![RAW map your dimensions screen]({{ page.root }}/fig/04-circle-packing.png) <!--todo: replace with English labels-->
+>
 > Experiment with other ways to visualize this dataset. Be sure to try out the **Treemap** and **Sunburst**. What do you think?
-> 
-> [insert image]
 >
 {: .challenge}
 
@@ -204,8 +206,8 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > 5. Copy the whole table (ctrl+A). Click the `+` under the worksheet to create a new worksheet.
 > 6. Paste the copied data into the new worksheet. Choose `Paste values only` using the icon on the bottom of the screen to remove the formatting.
 > 
-> [insert image]
-> 
+> ![Paste values dialog box]({{ page.root }}/fig/04-paste-values.png)
+>
 > 7. Insert one column on the left (right-click the first column and choose `insert 1 left`).
 > 8. For each number in the second column, add the corresponding label of the Dewey class in the leftmost column. For instance, for `0`, add `General works`, and for `1`, write `Philosophy and psychology`
 > 
@@ -279,7 +281,8 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > 18. Select the whole table (ctrl+A) and open a new tab with [RAWGraphs](http://rawgraphs.io/). Paste it into the `Load your data field`
 > 19. Select `Treemap`, again. Try out different options to visualize this data.
 >
-> [insert image]
-> *An example treemap with the top DDC categories and their size*.
+> > ![Sample treemap]({{ page.root }}/fig/04-treemap-02.png)
+>
+> <!--*An example treemap with the top DDC categories and their size*.--><!--todo: check image captions-->
 >
 {: .challenge}
