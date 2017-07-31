@@ -51,39 +51,52 @@ First, we have to **import our data into Google Spreadsheets**:
 > 
 > Let’s create our first pivot table. Follow the following steps:
 >
->1. Select all the data in the NewItems sheet (Ctrl + A (Windows) or Cmd + A (Mac))
+>1. Select **all the data** in the **NewItems** sheet (Ctrl + A (Windows) or Cmd + A (Mac))
 >
 >2. Choose `Data` > `Pivot table…`
 >
 >3. Notice at the bottom of the window that a new sheet has been created. Rename it to **PublisherPivot** (again, by double clicking on the sheet name or right-clicking and choosing `Rename…`)
 >
->Now, we are ready to add rows and values to our pivot table. For this, use the ‘Report Editor’ functionality on the right-hand side.
+>Now, we are ready to **add rows and values** to our pivot table. For this, use the ‘**Report Editor**’ functionality on the right-hand side.
 >
->4. Rows: Click `add field`. Choose `Publisher` from the list of fields which appears
+>4. **Rows**: Click `add field`. Choose `Publisher` from the list of fields which appears
 >
->It should now show: `‘group by’: Publisher`
+>It should now show: `Group by: Publisher`
 >
->5. Values: Click `add field`. Again, choose `Publisher` from the list
+>5. **Values**: Click `add field`. Again, choose `Publisher` from the list
 >
->It now shows: `‘group by’: publisher`, and `‘summarize by’: SUM`.
+>It now shows: `Group by: publisher`, and `Summarize by: SUM`.
 >
 >6. Click on `SUM` and change the value to `COUNTA` (counting all values)
 >
->We now see a list of publishers and how often they appear in our dataset, in our pivot table. However, the order is alphabetical, which does not reveal many insights in the most common publishers in our datasets. Thus, we have to adapt the sorting. We now will order the publishers by how often they occur in the dataset.
+>We now see a list of publishers and how often they appear in our dataset, in our pivot table. You may observe that some more data cleaning could be done (e.g. merging 'Ace Books' and 'Ace Books' inc.). 
 >
->7. Under rows, click on `‘sort by:’ Publisher`. Choose the option `‘COUNTA of  Publisher’` from the list.
+>Right now, the order is alphabetical, which does not reveal many insights in the most common publishers in our datasets. Thus, we have to adapt the sorting. We now will order the publishers by how often they occur in the dataset.
+>
+>7. Under rows, click on `Sort by: Publisher`. Choose the option `COUNTA of  Publisher` from the list.
 >
 >Now, we see the ordering has changed, but it starts at the lowest value, not the highest one. Since we’re interested in the most frequently occuring publishers, we will have to reorder the set:
 >
->8. Click `order: Ascending`, and change the value to: `Descending`.
+>8. Click `Order: Ascending`, and change the value to: `Descending`.
 >
-> This results in a list of the top publishers in this dataset. [add list]
+> This results in a list of the top publishers in this dataset.
 >
-><!--(Put up a blue sticker on your laptop when done or a orange one if you face problems.)-->
+> > ## Answer
+> >
+> > 		Oxford University Press		726
+> > 	Routledge			700
+> > 	Universitetsforl			529
+> > 	Cambridge University Press	440
+> > 	Cappelen Damm			360
+> > 	Fagbokforl			314
+> > 	Gyldendal akademisk		297
+> > 	Palgrave Macmillan		287
+> > 	Gyldendal			235
+> > 	Cappelen Damm akademisk		207
+> >
+> {: .solution}
 > 
 {: .challenge}
-
-For these types of lists, data cleaning (which can for instance be done via OpenRefine) is very important, since variations in names will directly influence the counts we obtain. Often this ends up as an iterative process where you start by doing some initial cleanup of the data, then carry out a first analysis (like we just did), which reveals more issues with the data that you can go back to clean up before continuing. 
 
 >## Discussion
 >
@@ -91,6 +104,9 @@ For these types of lists, data cleaning (which can for instance be done via Open
 >
 {: .discussion}
 
+For these types of lists, data cleaning (which can for instance be done via OpenRefine) is very important, since variations in names will directly influence the counts we obtain. Often this ends up as an iterative process where you start by doing some initial cleanup of the data, then carry out a first analysis (like we just did), which reveals more issues with the data that you can go back to clean up before continuing. 
+
+# Charting in Google Sheets
 
 After creating our first pivot table, we can now move on to creating our first chart in Google Spreadsheets.
 
@@ -105,26 +121,32 @@ After creating our first pivot table, we can now move on to creating our first c
 >
 > > ## Discussion
 > > 
-> > Which of the three recommendations would you choose for this dataset? Why?
+> > Which of the visualizations would you choose for this dataset? Why?
 > > 
 > {: .discussion}
 >
-> 3. Select the `column chart` from the menu.
+> 3. Select the `Column chart` from the `Chart type` dropdown menu.
 >
 > To change the appearance of the graph, just click on the elements of it. Try out some options:
 >
 > 4. Left-click on the **series** (the bars in the graph) and change the color to your liking.
 > 
-> 5. Left-click on the **names of the publishers**, and change the font from ‘12’ to ‘10’.
+> 5. Left-click on the **names of the publishers**, and change the font from `12` to `10`.
 > 
-> 6. Let’s remove the legend, since it is not very useful in this graph. Click on the **legend** of the graph, choose `position` and click on `none`..
+> 6. Let’s remove the legend, since it is not very useful in this graph. Click on the **legend** of the graph, and under `Legend` on the right-hand side, choose `Position` and click on `none`..
 > 
-> 7. Add a **title** to the graph (right-click the graph, and select “chart & axis titles” and add the  ‘title’ in the right box. You could also add it using the right box, selecting the second tab: `Customize` > `Chart & axis titles`).
+> 7. Add a **title** to the graph (right-click the graph, and select `Chart & axis titles` and add the title in the right box. You could also add it using the right-hand side `Chart editor` box, selecting the second tab: `Customize` > `Chart & axis titles`).
 > 
 > Try out the other options to customize your graph yourself. 
 > 
-> * E.g., change the orientation of the labels, or the scale of the Y axis. <!--Put the blue sticker when you are done exploring the possibilities.-->
+> * E.g., change the orientation of the labels, or the scale of the Y axis.
 >
+> > ## Answer
+> >
+> > ![Most Frequent publishers]({{ page.root }}/fig/02-frequent-publishers.png)
+> >
+> {: .solution}
+> 
 {: .challenge}
 
 
@@ -132,25 +154,40 @@ After creating our first pivot table, we can now move on to creating our first c
 > 
 > Let’s **duplicate our pivot table** and change its contents.
 > 
-> 1. Right-click on the name of the Pivot table (i.e., `PublisherPivot`) and select `Duplicate`
+> 1. Right-click on the **name** of the Pivot table (i.e., `PublisherPivot`) and select `Duplicate`
 > 
 > 2. Change the name of the sheet to **AuthorPivot**
 > 
-> 3. Delete the graph by clicking on it and pressing the backspace or delete key (or by clicking on the ▼ icon, and choose `Delete chart`). Then remove the rows and values by clicking on the `X`'s in the “Report Editor” on the right side.
+> 3. Delete the graph by clicking on it and pressing the *backspace* or *delete* key (or by clicking on the icon with three 'dots', and choosing `Delete chart`). Then remove the rows and values by clicking on the `X`'s in the `Report Editor` on the right-hand side.
 > 
 > Let’s make a new pivot table:
 > 
-> 4. For the rows, now click `add field` and choose `Author`.
+> 4. For the rows, now click `Add field` and choose `Author`.
 > 
-> 5. For the values, now choose `add field` and select again `Author`. For `Summarize by`, choose `COUNTA`.
+> 5. For the values, now choose `Add field` and select again `Author`. For `Summarize by`, choose `COUNTA`.
 > 
 > 6. For the Rows, now choose `Order: Descending`, and `Sort by: COUNTA of Author`.
 > 
-> After a little while, the pivot table should appear, and look like the image below.
-> 
+> After a little while, the pivot table should appear, and look like below.
+>
+> > ## Answer
+> >
+> > 	1. Norge				58
+> > 	2. Ibsen, Henrik 1828-1906	41
+> > 	3. Falkanger, Thor 1934-		33
+> > 	4. Vance, Jack			23
+> > 	5. Silverberg, Robert		22
+> > 	6. Lødrup, Peter 1932-2010	19
+> > 	7. Lindstrøm, Tom L. 1954-	19
+> > 	8. Bradbury, Ray			17
+> > 	9. Asimov, Isaac			17
+> > 	10. Schartum, Dag Wiese 1956-	16
+> >
+> {: .solution}
+>
 > > ## Discussion
 > >
-> > What do you notice when looking at the pivot table? ..
+> > What do you notice when looking at the pivot table?
 > >
 > > {: .discussion}
 >
@@ -168,42 +205,49 @@ After creating our first pivot table, we can now move on to creating our first c
 > >
 > > {: .discussion}
 > 
-> So, we have thus far looked at some publisher data, and at the authors of newly acquired books. To get more insights, we will now check how the books are distributed per UiO library.
-> 
 {: .challenge}
 
+# Visualizing distributions per library
+
+We have thus far looked at some publisher data, and at the authors of newly acquired books. To get more insights, we will now check how the books are distributed per library.
 
 > ## Exercise 4: Checking the distribution of new books per library and visualizing it
 > 
 > 1. Remove the filter we have just added, by clicking the `X` next to `Filter: Acquisition method`
 > 
-> 2. Choose ‘Columns’: `add field`. Select `Library name`.
+> 2. Choose **Columns**: `Add field`. Select `Library name`.
 > 
 > Now, we may have to wait a little bit, since we are generating a lot of summary data. Finally, you will see a large table with the authors as rows, and all different university libraries as columns.
 > 
-> We get some idea about the distribution per library, but it is quite an overwhelming amount of data. We can notice that there is e.g. some overlap between the most purchased authors in different libraries.
+> We get some idea about the distribution per library, but it is quite an overwhelming amount of data. **Any observations?** We can notice that there is e.g. some overlap between the most purchased authors in different libraries. 
 > 
-> Let’s filter the data to make it more ‘readable’.
+<!-- Let’s **filter** the data to make it more ‘readable’.
 > 
 > 1. Click `Add field` next to the `Filter` label. Choose `Library name`.
 > 
 > 2. Click on ‘Show:’ `All items`. Click `Clear` to uncheck all library names. Now select `Humanities & Social Sciences Library`, `Science Library`, `Medical Library` and `Law Library`. (Or your own favourite library!).
 > 
-> Wait for the table to update (this may take a little while - if the browser shows the warning that the page has become unresponsive choose ‘wait’). **Any observations?**
-> 
-> Now, we can visualize this dataset using a ‘stacked bar chart’
+> Wait for the table to update (this may take a little while - if the browser shows the warning that the page has become unresponsive choose ‘wait’). --> 
+>
+> Now, we can visualize this dataset using a ‘Stacked bar chart’
 > 
 > 1. Select the **top 40** of all author rows with all columns (to select; either click and drag, or you can click on the top left cell and, while you hold down the shift key, press the bottom right cell in our range. The latter way is especially useful if you need to make a much larger selection.)
 > 
-> 2. Now choose `Insert` > `Chart`. Go to the `chart types` tab. Check out the different types of graphs Google Spreadsheets offers. Finally, choose the second ‘Bar’ chart (`Stacked Bar chart`). Click on `insert`.
+> 2. Now choose `Insert` > `Chart`. Go to the `Chart types` tab. Check out the different types of graphs Google Spreadsheets offers. Finally, choose the second ‘Bar’ chart (`Stacked Bar chart`). Click on `Insert`.
 > 
-> 3. Go to `Customize` and add a descriptive title. Then click the names on the Y axis and change the font size to 10. Enlarge the chart vertically by dragging the blue box handle on the bottom until all author names are shown.
+> 3. Go to `Customize` and add a **descriptive title**. Then click the **names** on the Y axis and change the font size to 10. Enlarge the chart vertically by dragging the blue box handle on the bottom until all author names are shown.
 > 
-> >## Discussion
+> > ## Answer
+> >
+> > ![Most Frequent publishers]({{ page.root}}/fig/02-frequent-publishers-per-library.png)
+> >
+> {: .solution}
+>
+> > ## Discussion
 > >
 > > Any observations based on the graph?
 > >
-> > {: .discussion}
+> {: .discussion}
 >
 {: .challenge}
 

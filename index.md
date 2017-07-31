@@ -24,7 +24,6 @@ we gather “tool-agnostic” visualization skills.
 > * a free community account for [Plot.ly](https://plot.ly)
 > * a dataset that can be downloaded [here](http://example.com/) (FIXME).
 >
-> The dataset has been extracted from Alma Analytics and cleaned
-> using OpenRefine (details about the cleaning process here (link to Ahmed's notes? FIXME))
+> The dataset has been extracted from Alma Analytics. After extraction, the publication dates, the publication places and publisher names have been cleaned using OpenRefine's 'text facet' and 'fingerprinting' features. (link to Ahmed's notes? FIXME))
 
 {: .prereq}
