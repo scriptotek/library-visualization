@@ -47,15 +47,15 @@ In the next exercise, we will experiment with converting variables.
 > 
 > Let’s create these three columns.
 > 
-> 1. First, we are going to prepare the receiving week column. Go to the last column (`S`), and type the following formula in the second row: `=WEEKNUM(M2)`. The cell should now show a `2`.
+> 1. First, we are going to prepare the receiving week column. Go to the last column (`N`), and type the following formula in the second row: `=WEEKNUM(L2)`. The cell should now show a `2`.
 > 
-> 2. Select the cell containing the formula and copy it (ctrl+c). Now select the whole column by clicking on the `S` column header, and paste the formula (ctrl+v). Verify that the week numbers are indeed visible in the whole column. (you can do this by, for example, selecting the entire column, clicking on the `Data` tab in the main menu, and selecting `Filter`. Then go to the first cell of column S and click on the arrow pointing down, this will show the unique values).
+> 2. Select the cell containing the formula and copy it (ctrl+c). Now select the whole column by clicking on the `N` column header, and paste the formula (ctrl+V). Verify that the week numbers are indeed visible in the whole column. (you can do this by, for example, selecting the entire column, clicking on the `Data` tab in the main menu, and selecting `Filter`. Then go to the first cell of column `N` and click on the arrow pointing down, this will show the unique values).
 > 
 > 3. Write the title of the column in the first row (where it says `#VALUE`):`Receiving weeknum`
 > 
-> 4. Repeat this process in column `T`, and type the formula `=WEEKDAY(M2)`. Give it the title `Receiving weekday`. Now the rows should have a weekday number ranging from `1` to `7`.
+> 4. Repeat this process in column `O`, and type the formula `=WEEKDAY(L2)`. Give it the title `Receiving weekday`. Now the rows should have a weekday number ranging from `1` to `7`.
 > 
-> 5. Do the same in column `U`, and type the formula `=HOUR(M2)`. Verify that all rows now have the correct values for the receiving hour. Give it the title `Receiving hour`.
+> 5. Do the same in column `P`, and type the formula `=HOUR(L2)`. Verify that all rows now have the correct values for the receiving hour. Give it the title `Receiving hour`.
 > 
 > Now, we are ready to summarize our data in a pivot table.
 > 
@@ -65,60 +65,75 @@ In the next exercise, we will experiment with converting variables.
 > 
 > 8. Rename the worksheet with the pivot table to `ReceivingPivot`
 > 
-> 9. Rows: Choose `add field`: `Receiving weeknum`
+> 9. Rows: Choose `Add field`: `Receiving weeknum`
 > 
-> 10. Values: Choose `add field`: `Receiving weeknum`
+> 10. Values: Choose `Add field`: `Receiving weeknum`
 > 
-> 11. Change `summarize by` from `SUM` to `COUNTA`. Validate if everything is correct. The grand total of items should be 16804.
+> 11. Change `Summarize by` from `SUM` to `COUNTA`. Validate if everything is correct. The grand total of items should be 16721.
 > 
 > The next step is to visualize the data.
 > 
-> 12. Uncheck `show totals`
+> 12. Uncheck `Show totals`
 > 
 > 13. Select all cells in the pivot table (ctrl + A)
 > 
 > 14. Choose `Insert` > `chart`
 > 
-> Look at the different chart recommendations. Click on the histogram, which depicts the distribution of the data. We can observe there are few weeks with a low number of received items, and few with a high number. The most frequently received items for the whole library, however, lie between 200 and 400.
+> Look at the different chart recommendations. Click on the **histogram**, which depicts the distribution of the data. We can observe there are few weeks with a low number of received items, and few with a high number. In most cases, however, the number of received items in a week for the whole library lie between 200 and 400.
+>
+> ![Histogram of number of received items per week (frequency)]({{ page.root}}/fig/03-items-per-week.png)
 > 
-> Now, select the line chart. What do you observe?
+> Now, select the **line chart**. What do you observe?
 > 
 > Change the title of the graph to `Received items per week`.
+>
+> ![Number of received items per week (line chart)]({{ page.root}}/fig/03-line-chart-items-per-week.png)
 > 
 > Let’s make this more interesting and add the different libraries.
 > 
 > 1. Delete the chart (select the outline of the chart and press delete or backspace on the keyboard)
 > 
-> 2. Columns: select `add field`. Choose `Library name`
+> 2. Columns: select `Add field`. Choose `Library name`
 > 
 > Now we have a plethora of names, so let’s filter them a little.
-> 
-> 3. Filter, `add field` > `library name`. Click `clear`.
+<!-- 
+>
+> 3. Filter, `Add field` > `library name`. Click `clear`.
 > 
 > 4. Select your four favorite libraries (e.g., Humanities & Social Sciences, Science Library, Medical Library), but be sure to include the Humanities & Social Sciences library.
+-->
 > 
-> 5. Remove the checkbox for `show totals` for all elements of the pivot table
+> 3. Remove the checkbox for `Show totals` for all elements of the pivot table
 > 
-> 6. Again, select all data of the chart and select `Insert` > `Chart`
+> 4. Again, select all data of the chart and select `Insert` > `Chart`
 > 
 > Go to chart types, and explore various visualization options. Which do you like most and why?
 > 
 > Now, insert the stacked area chart.
 >
-> [insert image]
+> 5. Go to `Chart & axis titles` and add a descriptive title. Next, choose `Horizontal axis title` and assign 'Week number', and use 'Number of items' as the `Vertical axis title`.
+>
+> > ## Answer
+> >
+> > ![Item frequency (stacked area)]({{ page.root}}/fig/03-stacked-area-chart-items-per-week.png)
+> >
+> {: .solution}
 >
 > > ## Discussion
 > > 
 > > What do you think of this chart?
 > >
-> > {: .discussion}
+> {: .discussion}
 > 
 > Insert a second chart. Go to chart types and select the **sparkline** chart (under the `other` category). What can we observe here? (ignore the top line which is included in the chart).
 >
-> [insert image]
-> 
-> The empty parts of the graph are caused by the missing numbers in the pivot table. In Google Spreadsheets, there is no setting to automatically add zeroes when there are no values. This causes the line graphs to have omissions. In Excel, however, there is a setting to show zeros by default. This makes the data slightly easier to visualize without in-between steps. In another module, we will create a script for Google Sheets to do this for us.
+> > ## Answer
+> >
+> > ![Item frequency (sparkline)]({{ page.root}}/fig/03-sparkline-chart-items-per-week.png)
+> >
+> {: .solution}
 >
+> The empty parts of the graph are caused by the missing numbers in the pivot table. In Google Spreadsheets, there is no setting to automatically add zeroes when there are no values. This causes the line graphs to have omissions. In Excel, however, there is a setting to show zeros by default. This makes the data slightly easier to visualize without in-between steps. In another module, we will create a script for Google Sheets to do this for us.
 > 
 {: .challenge}
 

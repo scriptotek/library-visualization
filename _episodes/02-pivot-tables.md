@@ -83,7 +83,7 @@ First, we have to **import our data into Google Spreadsheets**:
 >
 > > ## Answer
 > >
-> > 		Oxford University Press		726
+> > 	Oxford University Press		726
 > > 	Routledge			700
 > > 	Universitetsforl			529
 > > 	Cambridge University Press	440
@@ -189,7 +189,7 @@ After creating our first pivot table, we can now move on to creating our first c
 > >
 > > What do you notice when looking at the pivot table?
 > >
-> > {: .discussion}
+> {: .discussion}
 >
 > Let’s go more into detail for this graph and filter it.
 > 
@@ -203,7 +203,7 @@ After creating our first pivot table, we can now move on to creating our first c
 > >
 > > What do you observe?
 > >
-> > {: .discussion}
+> {: .discussion}
 > 
 {: .challenge}
 
@@ -255,9 +255,9 @@ To sum up, In our first exercises we have started to use **Pivot Tables**, and w
 
 # Basic charting guidelines
 
-There are some guidelines for these types of charts (which we may have not fully followed!).
+There are some guidelines for these types of charts, suggested by [EazyBI.com](https://eazybi.com/blog/data_visualization_and_chart_types/) (which we may have not fully followed!):
 
-[EazyBI.com](https://eazybi.com/blog/data_visualization_and_chart_types/) suggests that **Column charts** should **not have more than 7 categories**.
+**Column charts** should **not have more than 7 categories**.
  If there is time involved in the data (e.g. months or years), it should always be on the horizontal axis, moving from left to right. Also, it is important to make the Y axis start at 0 to avoid misleading information. 
 
 Actually, we showed the 10 most occurring publishers in a column chart, which turns out was not the optimal choice.
