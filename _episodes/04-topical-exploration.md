@@ -145,8 +145,12 @@ To explore broader Dewey classes (and to better summarize our data), we will now
 > ![RAW map your dimensions screen]({{ page.root }}/fig/04-map-your-dimensions.png)
 > 
 > Voila, our first graph depicting DDC numbers in of our newest library items. The size depicts the number of books in each category.
-> 
-> ![RAW map your dimensions screen]({{ page.root }}/fig/04-treemap-01.png)
+>
+> > ## Answer
+> > 
+> > ![DDC numbers treemap]({{ page.root}}/fig/04-treemap-01.png)
+> >
+> {: .solution}
 > 
 > This chart is still rudimentary, and only using red colors. So, we can spice it up a little bit.
 > 

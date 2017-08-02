@@ -50,3 +50,8 @@ Other tools (e.g. [Google Fusion Tables](https://fusiontables.google.com/)) offe
 ![Google Fusion Tables map example]({{ page.root }}/fig/05-fusion-tables-map.png)
 
 *Example of a customized map in Google Fusion Tables, with the possibility to add interactivity and filters. It was made by saving the previously created pivot table as a csv, importing it to Fusion Tables and customizing the display. [Check out the example](https://fusiontables.google.com/DataSource?docid=1EnpraA9JdGXSAX9y97BCKcZwik21W3k6go4rrpJU).*
+
+# Read more
+
+* Google Fusion Tables gallery: [sites.google.com/site/fusiontablestalks/stories](https://sites.google.com/site/fusiontablestalks/stories)
+* Google Fusion Tables tutorials: [https://support.google.com/fusiontables/answer/184641](https://support.google.com/fusiontables/answer/184641)

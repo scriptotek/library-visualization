@@ -145,18 +145,24 @@ Let’s look at the data in another way, using the column we generated for the *
 > 
 > 1. Remove Rows: `Receiving week` by clicking the associated `X`, and remove Values: `Receiving week`.
 > 
-> 2. Click Rows: `add field`, choose `Receiving hour`. Click Values: `add field` and choose `Receiving hour` as well. Make sure to set `Summarize by` to COUNTA (not SUM).
+> 2. Click Rows: `Add field`, choose `Receiving hour`. Click Values: `Add field` and choose `Receiving hour` as well. Make sure to set `Summarize by` to COUNTA (not SUM).
 > 
-> 3. Something strange happened in the second graph. Be sure to remove `show totals`. See how the graph changes accordingly.
+> 3. Something strange happened in the second graph. To amend this, be sure to remove `Show totals`. See how the graph changes accordingly.
 > 
-> 4. Further format the chart to your liking.
-> 
-> 5. Now, change the chart title to `Books received per hour`.
-> 
-> What can we learn from this? Of course, this is just an example, but the same method could be applied to e.g. the loan transactions during a day, to optimize personnel allocation. A lot of this data is actually available via Alma Analytics.
-> 
-> [insert image]
+> 4. The top sparkline chart is faulty - it interprets the hours as values. Let's remove this column from the source data of the chart. In the `Data` dialog box, click on `A1:E53` (the `data range` of the chart), and change it to `B1:E53`.
 >
+> 5. Further format the chart to your liking. For instance, go to `Customize` and choose `Sparkline` and click `Fill`.
+> 
+> 6. Now, change the chart title to `Books received per hour`.
+> 
+> > ## Answer
+> > 
+> > What can we learn from this? Of course, this is just an example, but the same method could be applied to e.g. the loan transactions during a day, to optimize personnel allocation. A lot of this data is actually available via Alma Analytics.
+> > 
+> > ![Item frequency (sparkline)]({{ page.root}}/fig/03-sparkline-chart-items-per-hour.png)
+> >
+> {: .solution}
+> 
 > Now, let’s see how we publish the graph.
 > 
 > 1. Select the three vertical dots in the top right of the chart
@@ -165,22 +171,34 @@ Let’s look at the data in another way, using the column we generated for the *
 > 
 > 3. Now select the chart you would like to publish, and choose `interactive`. Under `Published content and settings` you can decide what content to publish, and whether to automatically republish after you make changes
 > 
-> 4. Click `Publish` to get a shareable url. Via embedding you can also `embed` the graph in your website.
+> 4. Click `Publish` to get a shareable url. Via `Embed` you can also integrate the chart in your website.
 > 
-> In sum, we have seen that it is quite simple to publish our chart, and to possibly integrate it in our website. This is not yet very interactive though. Later today, we will experiment with plot.ly to achieve more in this sense.
+> In sum, we have seen that it is quite simple to publish our chart, and to possibly integrate it in our website. This is not yet very interactive though. In the last lesson of this course, we will experiment with plot.ly to achieve more interactivity.
 > 
 {: .challenge}
 
 
 > ## Extra exercises: Further exploring the Creation and Receiving dates
 > 
-> 1. Using the same steps as above, create graphs for **receiving day of the week.**
+> 1. Using the same steps as above, create graphs for **Receiving day of the week.**
+>
+> > ## Answer
+> > 
+> > ![Item frequency (sparkline)]({{ page.root}}/fig/03-stacked-column-charts-items-per-day-of-week.png)
+> >
+> {: .solution}
 > 
-> 2. Find out at which **time of the day** most requests for new items (orders) are created.
-> 
-> Hint: you have to create an additional column in the NewItems spreadsheet which extracts the hour of the `PO Creation Date` column (most likely column L in your spreedsheet).
+> 2. Find out at which **Time of the day** most requests for new items (orders) are created. Hint: you have to create an additional column in the NewItems spreadsheet which extracts the hour of the `PO Creation Date` column (most likely column `K` in your spreedsheet).
 > 
 > Note: If the added column does not show up in the pivot table, you may have to edit the range of the pivot table (Via `Edit range`), and add the letter of the added column (or alternatively you can decide to create a new pivot table from the original data). 
+>
+> > ## Answer
+> > 
+> > The output of this data is peculiar, since there is a 'spike' at 17.00 o'clock. This underlines the fact that often data analysis and visualization raises more questions than that it solves. For instance, this spike may be caused by automated processing taking place at five.
+> > 
+> > ![Item frequency (sparkline)]({{ page.root}}/fig/03-stacked-column-chart-po-items-per-hour.png)
+> >
+> {: .solution}
 > 
 {: .challenge}
 
@@ -197,12 +215,14 @@ This all underlines that one should try out different visual representations of 
 > 
 > You could use both the `creation date` field and `receiving date` fields, and find out how long it takes before a book arrives. You could even compare this per library, and per publisher. To do so, you can create a `creation weeknum` column using the same formula we used before, and create a pivot table combining `creation weeknum` and receiving `weeknum`.
 > 
-> Then, there are various possibilities to visualize this, for instance in a GANTT chart, which can be made using the RAW framework, which we will first try out in the next module.
-> 
-> An example of a GANTT chart for the time taken to receive a number of informatics books.
+> Then, there are various possibilities to visualize this, for instance in a [GANTT chart](https://en.wikipedia.org/wiki/Gantt_chart), which can be made using the RAW framework, which we will first try out in the next module. An example of a GANTT chart for the time taken to receive a number of informatics books:
 >
-> [insert image]
+> ![Example GANTT chart]({{ page.root }}/fig/03-gantt-chart.png)
 > 
 > GANTT charts are in practice used often for project planning.
 > 
 {: .challenge}
+
+# Read more:
+- Chart usage guidelines:     [eazybi.com/blog/data_visualization_and_chart_types/](https://eazybi.com/blog/data_visualization_and_chart_types/)
+- Improving the 'data-ink ratio': [darkhorseanalytics.com/blog/data-looks-better-naked](http://www.darkhorseanalytics.com/blog/data-looks-better-naked)

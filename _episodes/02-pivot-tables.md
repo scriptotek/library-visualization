@@ -266,3 +266,8 @@ Actually, we showed the 10 most occurring publishers in a column chart, which tu
 A frequently applied simple chart which we did not use is the **Pie chart**, which should be used with caution - ideally with only 2 categories, and with a maximum of 6. They should not be used when the category values are very similar or different.
 
 A final guideline for these kind of graphs is to **keep it simple and to reduce clutter**. For instance, one should not use 3D effects in Pie charts, since they do not add any value and will make it harder to identify and compare the sizes of the pie slices (which is already hard with 2D pie charts because humans are not great at estimating and comparing angles). In general, one should remove all unnecessary decorations and lines.
+
+# Read more
+
+- Pivot tables: [en.wikipedia.org/wiki/Pivot_table]( https://en.wikipedia.org/wiki/Pivot_table) 
+- Chart usage guidelines:  [eazybi.com/blog/data_visualization_and_chart_types/](https://eazybi.com/blog/data_visualization_and_chart_types/)

@@ -191,3 +191,8 @@ Finally, we are going to make a **scatterplot**.
 {: .challenge}
 
 [todo: lesson ending, further reading.]
+
+# Read more
+
+* [How to build an embeddable interactive chart with plot.ly](http://www.storybench.org/how-to-build-an-embeddable-interactive-line-chart-with-plotly/)
+* [Minitab: Stacked and unstacked data](http://support.minitab.com/en-us/minitab/17/topic-library/minitab-environment/data-and-data-manipulation/data-manipulation/stacked-and-unstacked-data/)

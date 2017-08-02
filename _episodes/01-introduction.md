@@ -21,18 +21,20 @@ The question is, of course, how to actually visualize data in practical terms. A
 
 # Some famous examples:
 
-[image 1]
+> ![Example]({{ page.root}}/fig/01-example-minard.png)
 
 Depicting events Russian military campaign by Napoleon (1812-13). Can make information more clear. (https://www.edwardtufte.com/tufte/minard)
 
-[image 2]
+> ![Example]({{ page.root}}/fig/01-example-underground.png)
 
-Ease navigation: Tube map London (http://www.bbc.co.uk/london/travel/downloads/tube_map.gif)
+Ease navigation: Tube map London (https://en.wikipedia.org/wiki/File:TubeMapZ1_TFL.png)
 
-[image 3]
+> ![Example]({{ page.root}}/fig/01-example-snow.png)
+
 Saving lives: tracing the source of a cholera outbreak in Soho, London (1854), map used to find cause of epidemic. Dr. John Snow (source: https://www1.udel.edu/johnmack/frec682/cholera/, https://www1.udel.edu/johnmack/frec682/cholera/snow_map.png).
 
-[image 4]
+> ![Example]({{ page.root}}/fig/01-example-climate.png)
+
 Provide insights into scientific data: climate change “hockey stick” graph (Michael E. Mann, CC-BY)
 https://upload.wikimedia.org/wikipedia/commons/0/0a/Mann_hockeystick.jpg
 
@@ -71,13 +73,13 @@ Hence, the word ‘visualization’ encompasses a wide range of possible diagram
 # Common goals of visualization
 Visualizations can be made for a wide range of purposes. It may reveal things that were not visible before, and can be used for exploratory data analysis. Potential goals are manyfold:
 
-*Analyzing data, often exploratory
-“Graphing data needs to be iterative because we often do not know what to expect of the data; a graph can help discover unknown aspects of the data, and once the unknown is known, we frequently find ourselves formulating new questions about the data.” (Cleveland 1985, as cited in Spence, 2001) 
-* Disseminating results of analysis
+* **Analyzing data, often exploratory**
+*“Graphing data needs to be iterative because we often do not know what to expect of the data; a graph can help discover unknown aspects of the data, and once the unknown is known, we frequently find ourselves formulating new questions about the data.” (Cleveland 1985, as cited in Spence, 2001)*  
+* **Disseminating results of analysis**, 
 for instance in a news article or scholarly paper
-* Decision making
+* **Decision making**, 
 taking actions based on evidence in the data
-* Conveying a message, for instance social issues
+* **Conveying a message**, for instance social issues
 
 While there are many other potential goals for visualization, we mainly focus on exploratory data analysis and dissemination in this lesson.
 
@@ -123,4 +125,9 @@ Also during the creation of visualizations, we may introduce issues (consciously
 
 While there is always some interpretation involved in both creating and reading visualizations, we can try to keep in mind some of these issues and try to prevent them.
 
+# Read more
 
+- Tufte (1983). The Visual Display of Quantitative Information
+- Cairo (2016). The Truthful Art - Data, Charts, and Maps for Communication.
+- Visualization examples: [informationisbeautiful.net/](http://www.informationisbeautiful.net/)
+- Article on visualization in a library context (Davis, 2009): [inthelibrarywiththeleadpipe.org/2009/not-just-another-pretty-picture/](http://inthelibrarywiththeleadpipe.org/2009/not-just-another-pretty-picture/)
