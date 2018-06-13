@@ -5,8 +5,9 @@ root: .
 
 This Library Carpentry lesson introduces librarians to working with visualization
 in [Google Spreadsheets](https://docs.google.com/spreadsheets/),
-[RAWGraphs](http://rawgraphs.io/) and [Plot.ly](https://plot.ly/). At the conclusion
-of the lesson you will understand:
+[RAWGraphs](http://rawgraphs.io/) and [Plot.ly](https://plot.ly/). This is an **alpha** Library Carpentry course, with possibilities for extension and refinement. 
+
+At the conclusion of the lesson you will understand:
 
 * how to work with pivot tables to explore and summarize data.
 * how to publish graphs in Google Spreadsheets.
