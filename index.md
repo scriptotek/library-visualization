@@ -21,9 +21,8 @@ we gather “tool-agnostic” visualization skills.
 > For this lesson you will need
 >
 > * a Google account to use with Google Sheets
-> * a free community account for [Plot.ly](https://plot.ly)
-> * a dataset that can be downloaded [here](http://example.com/) (FIXME).
+> * two datasets that can be downloaded [here](https://drive.google.com/file/d/0BwbdK-Qs627JLXhVX1pVRWJLVXM/view?usp=sharing).
 >
-> The dataset has been extracted from Alma Analytics. After extraction, the publication dates, the publication places and publisher names have been cleaned using OpenRefine's 'text facet' and 'fingerprinting' features. (link to Ahmed's notes? FIXME))
+> The dataset has been extracted from Alma Analytics. After extraction, the publication dates, the publication places and publisher names have been cleaned using OpenRefine's 'text facet' and 'fingerprinting' features.
 
 {: .prereq}
