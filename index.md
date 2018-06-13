@@ -23,6 +23,7 @@ we gather “tool-agnostic” visualization skills.
 > * a Google account to use with Google Sheets
 > * two datasets that can be downloaded [here](https://drive.google.com/drive/folders/0BwbdK-Qs627JWC1ESFMzQzJjaW8?usp=sharing).
 >
-> The dataset has been extracted from Alma Analytics. After extraction, the publication dates, the publication places and publisher names have been cleaned using OpenRefine's 'text facet' and 'fingerprinting' features.
+> The first dataset pertaining new physical library items (*new_physical_items.xslx*) has been extracted from Alma Analytics. After extraction, the publication dates, the publication places and publisher names have been cleaned using OpenRefine's 'text facet' and 'fingerprinting' features. 
+> The second dataset (*popular_searches*) includes common user queries, aggregated per month, and has been extracted from Primo Analytics. 
 
 {: .prereq}
